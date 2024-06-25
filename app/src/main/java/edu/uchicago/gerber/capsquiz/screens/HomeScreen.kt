@@ -23,7 +23,7 @@ fun HomeScreen() {
 
     Scaffold(
         //define the padding at the root
-        Modifier.padding(paddingValues = PaddingValues(all = 10.dp)),
+        modifier = Modifier.padding(paddingValues = PaddingValues(all = 10.dp)),
         topBar = {
             TopAppBar(
                 title = {
