@@ -58,7 +58,7 @@ fun QuestionScreen() {
                     Box(modifier = Modifier
                         .padding(10.dp)
                         .selectable(
-                            selected = (option == selectedOption),
+                            selected = false,
                             onClick = { }
                         )) {
                         Row(
@@ -67,9 +67,10 @@ fun QuestionScreen() {
                                 .padding(vertical = 8.dp)
 
                         ) {
-                            RadioButton(selected = selectedOption == option, onClick = {
-
-                            })
+                            RadioButton(
+                                selected = selectedOption == option,
+                                onClick = { }
+                            )
                             Text(
                                 text = option,
                                 modifier = Modifier
