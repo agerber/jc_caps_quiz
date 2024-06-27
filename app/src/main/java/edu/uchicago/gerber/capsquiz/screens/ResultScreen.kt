@@ -49,7 +49,7 @@ fun ResultScreen() {
                     .weight(7f)
             ) {
                 Text(
-                    text = "$playerName, your results are:",
+                    text = "${playerName}, your results are:",
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 40.dp),
                     style = MaterialTheme.typography.h6
                 )
