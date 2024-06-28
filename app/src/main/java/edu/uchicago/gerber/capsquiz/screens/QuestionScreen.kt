@@ -78,7 +78,7 @@ fun QuestionScreen(navController: NavController, viewModel: QuizViewModel) {
                             ) {
                                 RadioButton(
                                     selected = selectedOption == option,
-                                    onClick = { })
+                                    onClick = { viewModel.selectOption(option = option)})
                                 Text(
                                     text = option,
                                     modifier = Modifier
