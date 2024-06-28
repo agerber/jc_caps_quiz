@@ -23,15 +23,12 @@ class QuizViewModel  : ViewModel() {
 
 
 
-    //these values used on the QuestionScreen
-    //the following is used for preview-only. We can ignore this in production app and we don't need a corresponding State
-    private var previewAnswers = mutableListOf("Paris", "Berlin", "London", "Dublin", "Lisbon")
-
     //set all to hard-coded default values initially
     private var _playerName = mutableStateOf("Adam")
     val playerName: State<String> = _playerName
 
-    private var _question = mutableStateOf<Question>(Question("Germany", "Berlin", "EUR", previewAnswers))
+    private var _question = mutableStateOf<Question>(Question("Germany", "Berlin", "EUR",
+        mutableListOf("Paris", "Berlin", "London", "Dublin", "Lisbon")))
     val question: State<Question> = _question
 
     private var _questionNumber = mutableStateOf<Int>(1)
